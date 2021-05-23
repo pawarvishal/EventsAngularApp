@@ -17,6 +17,7 @@ import {
 import { EventsAppComponent } from './events-app.component';
 import { NavBarComponent } from './nav/nav-bar.component';
 import { appRoutes } from './routes';
+import { AuthService } from './user/auth.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { appRoutes } from './routes';
   ],
   providers: [
     EventService, 
-    ToastrService, 
+    ToastrService,
+    AuthService, 
     EventRouteActivator,
     EventListResolver,
     {
